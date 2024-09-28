@@ -1,0 +1,95 @@
+
+.title{
+  font-size: 16px;
+  font-weight: 500;
+}
+.sub-title{
+  font-size: 14px;
+  color: #777;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.cards-section{
+  padding-top: 15px;
+}
+.card{
+  padding: 10px;
+}
+.card-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-details > i{
+  font-size: 40px;
+  margin-right: 10px;
+  color: #b7b4b4d3;
+}
+.card-count{
+  font-size: 34px;
+  color: #898686;
+  font-weight: 700;
+  line-height: 10px;
+  padding-top: 12px;
+}
+.card-label{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 8px;
+  padding-top: 6px;
+}
+
+.progress-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin-left: 29%;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring__circle--bg {
+  fill: transparent;
+  stroke:  #ff5050;
+  stroke-width: 10;
+}
+
+.progress-ring__circle {
+  fill: transparent;
+  stroke:  #00cc00;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.35s;
+  transform: rotate(0.25turn);
+  transform-origin: 50% 50%;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 21px;
+  color: black;
+}
+.labeling{
+ line-height: 16px;
+}
+
+.progress-labeling{
+  height: 14px;
+  width: 14px;
+  border-radius: 3px;
+}
+.progress-label{
+  margin-top: -3px;
+}
+.completed{
+  background-color: #ff5050;
+}
+.left{
+  background-color: #00cc00;
+}

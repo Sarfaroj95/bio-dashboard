@@ -1,0 +1,82 @@
+/* .navbar-nav{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.active{
+  border-bottom: 3px solid gray;
+}
+.nav-item{
+  list-style-type: none;
+} */
+
+/* Main container to hold both the sidebar and content area */
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Fixed side menu */
+.side-menu {
+  width: 220px;
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  /* flex-direction: column; */
+  padding-top: 20px;
+  display: block;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-menu li {
+  padding: 10px 30px;
+}
+.menus{
+  text-align: left;
+  width: 220px;
+}
+
+.side-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: left;
+}
+
+.active-link {
+  width: 100%;
+  background-color: #1abc9c;
+  font-weight: bold;
+  border-right: 5px solid #ECF0F1;
+}
+ a:hover {
+  background-color: #16a085;
+
+}
+
+/* Content area where routed pages will be displayed */
+.content-area {
+  margin-left: 220px;
+  padding: 20px;
+  width: calc(100% - 220px);
+  background-color: #ecf0f1;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.fa-hospital-o{
+  font-size: 22px;
+  border: 2px solid #16a085;
+  padding: 4px;
+  border-radius: 3px;
+}

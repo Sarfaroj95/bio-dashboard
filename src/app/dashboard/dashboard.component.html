@@ -1,0 +1,50 @@
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      @for(menu of navList; track menu.route){
+        <a [routerLink]="menu.route" class="nav-link text-center" routerLinkActive="active">
+          <ul class="text-center">
+           <li class="nav-item" >
+            <i [class]="menu.icon" aria-hidden="true"></i>
+           <span> {{menu.routeName}} </span>
+          </li>
+          </ul>
+        </a>
+      }
+    </ul>
+  </div>
+</nav>
+<router-outlet />
+ -->
+
+ <div class="main-container">
+  <!-- Left Fixed Side Menu -->
+  <nav class="side-menu">
+    <ul class="menus">
+      @for(menu of navList; track menu.route){
+        <a [routerLink]="menu.route" class="nav-link" routerLinkActive="active-link">
+          <ul>
+           <li class="nav-item" >
+            <i [class]="menu.icon" aria-hidden="true"></i>
+           <span style="padding-left: 10px;"> {{menu.routeName}} </span>
+          </li>
+          </ul>
+        </a>
+      }
+    </ul>
+  </nav>
+
+  <!-- Right Dynamic Dashboard Content -->
+  <div class="content-area">
+    <nav class="navbar navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand"><i class="fa fa-hospital-o" aria-hidden="true"></i>  Hospital</a>
+        <form class="d-flex">
+          <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+          <button (click)="logOff()" class="btn btn-outline-danger btn-sm"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;&nbsp;Logout</button>
+        </form>
+      </div>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>
