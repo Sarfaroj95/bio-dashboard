@@ -28,8 +28,8 @@ export class SubscriptionComponent implements OnInit {
       "acountNo": "78ynuiy8",
       "status": "active",
       'accountName': 'Manipal Hospital Now',
-      "activeDate": '28 Sep 2024 10:00 am',
-      "expDate": '27 Oct  2024 10:00 am',
+      "activeDate": '15 Sep 2024 10:00 am',
+      "expDate": '15 Oct  2024 10:00 am',
       'registerMail': "abcd@manipal.com",
     }
   }
